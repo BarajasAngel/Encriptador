@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #F3F5FC;
+}
+.grid-item1{
+    grid-area: header;
+}
+.grid-item2{
+    grid-area: texto;
+}
+.grid-item3{
+    grid-area: encriptado;
+}
+.grid-item4{
+    grid-area: botones;
+}
+main.container-grid{
+    display:grid;
+    grid-template-areas:
+    'header header header header encriptado encriptado'
+    'texto texto texto texto encriptado encriptado'
+    'botones botones botones botones encriptado encriptado';    
+    padding: 1.8rem;
+}
+nav > a > img{
+    padding-left: 3.16rem;
+}
+.input1{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: #F3F5FC;
+}
+section.input1 > textarea{    
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+    
+}
