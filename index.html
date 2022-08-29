@@ -18,7 +18,7 @@
         </nav>
         <article class="grid-item2">
             <section class="input1">
-                <textarea cols="30" rows="10">Ingresa el texto aquí</textarea>
+                <textarea onclick="limpiarInput1()" id="input1" cols="30" rows="10">Ingresa el texto aquí</textarea>
             </section>
         </article>
         <article class="grid-item3">
@@ -26,35 +26,35 @@
                 <div class="text">
                     <div class="imagen">
                         <img src="./img/Muñeco.svg" alt="Sin texto"">
-                        <div class="parrafo">
-                            <h2>Ningún mensaje fue <br> encontrado</h2>
-                            <span>Ingresa el texto que deseas encriptar o <br> desencriptar.</span>
-                        </div>
+                        <div class=" parrafo">
+                        <h2>Ningún mensaje fue <br> encontrado</h2>
+                        <span>Ingresa el texto que deseas encriptar o <br> desencriptar.</span>
                     </div>
-                    <div class="desencriptar">
-                        <textarea cols=" 30" rows="10">
+                </div>
+                <div class="desencriptar">
+                    <textarea cols=" 30" rows="10" id="input2">
                         </textarea>
-                        <button class="btn">
-                            Copiar
-                        </button>
-                    </div>
+                    <button class="btn">
+                        Copiar
+                    </button>
+                </div>
                 </div>
             </section>
         </article>
         <article class="grid-item4">
             <section class="container-buttons">
-                <div>
+                <div id="advertencia">
                     <img src="./img/info.svg" alt="info">
                     <span>Solo letras minúsculas y sin acentos</span>
                 </div>
                 <div class="buttons">
-                    <button class="btn btn-Encriptar">Encriptar</button>
-                    <button class="btn">Desencriptar</button>
+                    <button onclick="Encriptar()" class="btn btn-Encriptar">Encriptar</button>
+                    <button onclick="Desencriptar()" class="btn">Desencriptar</button>
                 </div>
             </section>
         </article>
     </main>
-    </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

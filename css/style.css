@@ -78,6 +78,9 @@ div.parrafo{
     grid-template-columns: 1fr;
     gap:16px;
 }
+#advertencia{
+    color: #495057;
+}
 .buttons{
     display: flex;
     gap: 16px;
