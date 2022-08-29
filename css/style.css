@@ -7,19 +7,13 @@
 }
 body{
     background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
 }
-.grid-item1{
-    grid-area: header;
-}
-.grid-item2{
-    grid-area: texto;
-}
-.grid-item3{
-    grid-area: encriptado;
-}
-.grid-item4{
-    grid-area: botones;
-}
+.grid-item1{grid-area: header;}
+.grid-item2{grid-area: texto;}
+.grid-item3{grid-area: encriptado; display: flex; align-content: center; justify-content: center;}
+.grid-item4{grid-area: botones;}
+
 main.container-grid{
     display:grid;
     grid-template-areas:
@@ -31,6 +25,7 @@ main.container-grid{
 nav > a > img{
     padding-left: 3.16rem;
 }
+
 .input1{
     display: flex;
     justify-content: center;
@@ -39,11 +34,45 @@ textarea{
     outline: none;
     resize: none;
     border: none;
-    background-color: #F3F5FC;
+    background-color: transparent;
 }
-section.input1 > textarea{    
-    font-family: 'Inter', sans-serif;
+section.input1 > textarea{        
     font-size: 32px;
-    color: #0A3871;
+    color: #0A3871;   
+    font-family: 'Inter', sans-serif;
+}
+
+section.input2{
+    background-color: white;
+    height: 92vh;
+    width: 400px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.parrafo{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+}
+.imagen{
+    /* display: none;     */
+}
+.desencriptar{
+    display: none;
+    width: 90%;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desencriptar > textarea{
+    font-size: 24px;
+    width: 100%;
     
 }
