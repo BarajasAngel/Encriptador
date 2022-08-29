@@ -12,7 +12,7 @@ body{
 .grid-item1{grid-area: header;}
 .grid-item2{grid-area: texto;}
 .grid-item3{grid-area: encriptado; display: flex; align-content: center; justify-content: center;}
-.grid-item4{grid-area: botones;}
+.grid-item4{grid-area: botones; display:flex; justify-content: center;align-items: center;}
 
 main.container-grid{
     display:grid;
@@ -57,9 +57,6 @@ div.parrafo{
     gap: 16px;
     text-align: center;
 }
-.imagen{
-    /* display: none;     */
-}
 .desencriptar{
     display: none;
     width: 90%;
@@ -75,4 +72,35 @@ div.parrafo{
     font-size: 24px;
     width: 100%;
     
+}
+.container-buttons{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:16px;
+}
+.buttons{
+    display: flex;
+    gap: 16px;
+}
+.btn{
+    width: 16rem;
+    height: 3.5rem;
+    font-size: 16px;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    border-radius: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #D8DFE8;
+}
+
+.btn-Encriptar{
+    color: #FFFFFF;
+    background-color: #0A3871;
+}
+.btn-Encriptar:hover{
+    background-color: #07274e;
 }
