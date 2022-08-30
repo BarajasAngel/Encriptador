@@ -18,23 +18,23 @@
         </nav>
         <article class="grid-item2">
             <section class="input1">
-                <textarea onclick="limpiarInput1()" id="input1" cols="30" rows="10">Ingresa el texto aquí</textarea>
+                <textarea  placeholder="Ingresa el texto aquí" id="input1" cols="30" rows="10"></textarea>
             </section>
         </article>
         <article class="grid-item3">
             <section class="input2">
                 <div class="text">
-                    <div class="imagen">
+                    <div  id="imagen">
                         <img src="./img/Muñeco.svg" alt="Sin texto"">
                         <div class=" parrafo">
                         <h2>Ningún mensaje fue <br> encontrado</h2>
                         <span>Ingresa el texto que deseas encriptar o <br> desencriptar.</span>
                     </div>
                 </div>
-                <div class="desencriptar">
-                    <textarea cols=" 30" rows="10" id="input2">
+                <div class="desencriptar" id="desencriptar">
+                    <textarea cols=" 30" id="input2">
                         </textarea>
-                    <button class="btn">
+                    <button class="btn" data-clipboard-target="#input2">
                         Copiar
                     </button>
                 </div>
@@ -54,7 +54,11 @@
             </section>
         </article>
     </main>
-    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js" integrity="sha512-iJh0F10blr9SC3d0Ow1ZKHi9kt12NYa+ISlmCdlCdNZzFwjH1JppRTeAnypvUez01HroZhAmP4ro4AvZ/rG0UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js">
+        
+    </script>
 </body>
 
 </html>

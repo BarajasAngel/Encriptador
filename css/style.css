@@ -36,6 +36,10 @@ textarea{
     border: none;
     background-color: transparent;
 }
+textarea:hover{
+    cursor: text;
+}
+::placeholder { color: #0A3871; }
 section.input1 > textarea{        
     font-size: 32px;
     color: #0A3871;   
@@ -57,10 +61,18 @@ div.parrafo{
     gap: 16px;
     text-align: center;
 }
+#input2{
+    min-height: 72vh;
+}
+.desencriptar-mostrar{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .desencriptar{
     display: none;
-    width: 90%;
-    
 }
 .text{
     display: flex;
@@ -68,10 +80,9 @@ div.parrafo{
     justify-content: center;
     align-items: center;
 }
-.desencriptar > textarea{
+.desencriptar-mostrar > textarea{
     font-size: 24px;
-    width: 100%;
-    
+    width: 100%;    
 }
 .container-buttons{
     display:grid;
